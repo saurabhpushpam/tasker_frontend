@@ -1,0 +1,167 @@
+
+.task-form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.task-form {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+.task-form h2 {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.task-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.task-form input,
+.task-form textarea,
+.task-form button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.task-form textarea {
+  resize: vertical;
+}
+
+.task-form button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.task-form button:disabled {
+  background-color: #c0c0c0;
+  cursor: not-allowed;
+}
+
+.task-form button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .task-form {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .task-form-container {
+    padding: 10px;
+  }
+
+  .task-form {
+    padding: 15px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Basic responsive styling for task update */
+.task-update-container {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.task-table {
+  width: 100%;
+  max-width: 800px;
+  border-collapse: collapse;
+}
+
+.task-table th,
+.task-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.task-table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.task-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.task-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.task-table select {
+  width: 100%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .task-table {
+    font-size: 14px;
+  }
+
+  .task-table th,
+  .task-table td {
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .task-table {
+    font-size: 12px;
+  }
+
+  .task-table th,
+  .task-table td {
+    padding: 6px;
+  }
+}
